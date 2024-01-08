@@ -1,0 +1,295 @@
+@font-face {
+  font-family: 'Poppins'; /* Titre */
+  src: url('/font/Poppins-Bold.ttf') format(‘truetype’) ;
+}
+
+@font-face {
+  font-family: 'Roboto'; /* Texte */
+  src: url('/font/Roboto-Regular.ttf') format(‘truetype’) ;
+}
+
+/* CSS general */
+*,::before,::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('img/fond.png');
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: auto;
+}
+
+header, footer {
+  backdrop-filter: blur(2px);
+  background: rgba(195, 129, 84, 0.2);
+}
+
+header {
+  min-height: 10vh;
+  color: #613326;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  flex: 1;
+  display: none;
+}
+
+section h2 {
+  text-align: center;
+}
+
+footer {
+  min-height: 10vh;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer ul {
+  text-align: center;
+}
+
+#abo:target,
+#par:target,
+#com:target,
+#pro:target,
+#con:target {
+    display: block;
+}
+
+fieldset {
+  background-color: #C38154;
+  border: 5px solid #884A39;
+  border-radius: 15px;
+  padding: 50px 100px 50px 100px;
+  position: relative;
+  margin: 50px 225px 50px 225px;
+}
+
+legend {
+  background-color: #884A39;
+  color: #F9E0BB;
+  padding: 5px 15px;
+  border: 5px solid #C38154;
+  border-radius: 15px;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+/* About-me */
+
+/* Parcours */
+
+/* Compétences */
+  .competences fieldset {
+    background-color: #C38154;
+    border: 5px solid #884A39;
+    border-radius: 15px;
+    padding: 0px 40px 0px 40px;
+    margin: 15px;
+  }
+
+  .competences {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+  }
+
+  .competences fieldset {
+    text-align: center;
+  }
+
+  .competences img {
+    margin: 10px;
+  }
+
+/* Projet */
+  .projet fieldset {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  /* Custom barre */
+  .projet fieldset::-webkit-scrollbar {
+    height: 12px;
+  }
+
+  .projet fieldset::-webkit-scrollbar-thumb {
+    background-color: wheat;
+    border-radius: 10px;
+  }
+
+  .projet fieldset::-webkit-scrollbar-track {
+    background-color: C38154;
+    border-radius: 10px;
+  }
+
+  .projet fieldset {
+    overflow-x: scroll;
+    white-space: nowrap;
+    background-color: #C38154;
+    border: 5px solid #884A39;
+    border-radius: 15px;
+    padding: 50px 100px 50px 100px;
+    position: relative;
+    margin: 50px 225px 50px 225px;
+  }
+
+  .projetDiv {
+      display: flex;
+      width: 960px;
+  }
+
+  .projetChoix {
+      flex: 0 0 300px;
+      margin: 10px;
+      text-align: center;
+      background-color: wheat;
+      border: solid 15px wheat;
+      border-radius: 25px;
+  }
+
+  .projetChoix img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+  }
+
+  .projetTextH,
+  .projetTextB {
+      margin: 5px;
+  }
+  
+
+/* Parcours */
+  .parcours h3 {
+    width: 45%;
+    background-color: #884A39;
+    border: 5px solid #884A39;
+    color: #884A39;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    color: black;
+    padding: 10px;
+  }
+
+  .parcours p {
+    width: 45%;
+    background-color: wheat;
+    border: 5px solid #884A39;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .parcours div {
+    display: flex;
+    gap: 50px;
+  }
+
+
+/* Contacte */
+  .contact div {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+  }
+
+  .contact img {
+    width: 100px;
+  }
+
+
+/* Footer */
+  .footer li {
+    text-align: center;
+    display: inline;
+  margin: 0 25px;
+  }
+
+  .footer a {
+    color: #C38154;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.10em;
+    padding: 15px 20px;
+  }
+
+  .footer a:hover {
+    color: #884A39;
+  }
+
+
+/* Styles spécifiques pour les téléphones */
+@media only screen and (max-width: 1200px) {
+
+  .aboutme p{
+    font-style: italic;
+    font-size: 25px;
+  }
+
+  header {
+    font-size: 25px;
+  }
+
+  fieldset {
+    margin: 50px 112px 50px 111px;
+  }
+
+  .competences {
+    display:block;
+  }
+
+  .projet fieldset {
+    margin: 50px 112px 50px 112px;
+  }
+
+  .projetDiv {
+      display: block;
+      width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .projetChoix {
+      flex: 0 0 300px;
+      margin: 10px;
+      text-align: center;
+      background-color: wheat;
+      border: solid 15px wheat;
+      border-radius: 25px;
+  }
+
+  .projetChoix img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+  }
+
+  .competences img {
+    width : 100px;
+  }
+}
