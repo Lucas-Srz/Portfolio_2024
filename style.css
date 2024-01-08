@@ -45,10 +45,6 @@ section {
   display: none;
 }
 
-section h2 {
-  text-align: center;
-}
-
 footer {
   min-height: 10vh;
   font-size: 2em;
@@ -92,6 +88,35 @@ legend {
 /* About-me */
 
 /* Parcours */
+  .parcours h3 {
+    width: 45%;
+    background-color: #884A39;
+    border: 5px solid #884A39;
+    color: #884A39;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    color: wheat;
+    padding: 10px;
+  }
+
+  .parcours p {
+    width: 45%;
+    background-color: wheat;
+    border: 5px solid #884A39;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+    color: black;
+    padding: 10px;
+  }
+
+  .parcours div {
+    display: flex;
+    gap: 50px;
+  }
+
+  .parcours img {
+    vertical-align:bottom;
+  }
 
 /* Compétences */
   .competences fieldset {
@@ -177,40 +202,6 @@ legend {
       margin: 5px;
   }
   
-
-/* Parcours */
-  .parcours h3 {
-    width: 45%;
-    background-color: #884A39;
-    border: 5px solid #884A39;
-    color: #884A39;
-    border-radius: 10px 10px 0 0;
-    text-align: center;
-    color: black;
-    padding: 10px;
-  }
-
-  .parcours p {
-    width: 45%;
-    background-color: wheat;
-    border: 5px solid #884A39;
-    border-top: 0;
-    border-radius: 0 0 10px 10px;
-    text-align: center;
-    color: black;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .parcours div {
-    display: flex;
-    gap: 50px;
-  }
-
-
 /* Contacte */
   .contact div {
     display: flex;
